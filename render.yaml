@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: django-tabler
+    name: django-tabler-devops
     plan: starter
     env: python
-    region: frankfurt  # region should be same as your database region.
+    region: singapore  # region should be same as your database region.
     buildCommand: "./build.sh"
     startCommand: "gunicorn core.wsgi:application"
     envVars:
